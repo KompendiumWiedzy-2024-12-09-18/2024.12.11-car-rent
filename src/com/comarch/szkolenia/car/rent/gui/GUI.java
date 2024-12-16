@@ -1,8 +1,8 @@
 package com.comarch.szkolenia.car.rent.gui;
 
-import com.comarch.szkolenia.car.rent.model.Bus;
 import com.comarch.szkolenia.car.rent.model.Vehicle;
 
+import java.util.Collection;
 import java.util.Scanner;
 
 public class GUI {
@@ -16,7 +16,7 @@ public class GUI {
         return scanner.nextLine();
     }
 
-    public static void listVehicles(Vehicle[] vehicles) {
+    public static void listVehicles(Collection<Vehicle> vehicles) {
         for(Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
         }
